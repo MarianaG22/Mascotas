@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Pagina principal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="diseño.css"/>
+    </head>
+    <body>
+        <img class="img-0" src="imag/piesito.jpg" alt="">
+    <h1>Rescate, rehabilitación y adopción de mascotas</h1>
+
+    <div class="cont">
+        
+        <div class="felino">
+            <h3>Felinos</h3>
+            <img class="img-2" src="imag/gatitu.jpg" alt="">
+            <input class="botonM" id="botonF" type="submit" value="Registrar Felino">
+
+        </div>
+
+        <div class="canino">
+            <h3>Caninos</h3>
+            <img class="img-1" src="imag/perritu.jpg" alt="">
+            <input class="botonM" id="botonC" type="submit" value="Registrar Canino">
+
+        </div>
+
+
+        <div class="overlay" id="overlayF">
+            <div class="popup" id="popupF">
+                <a href="#" id="botonFC" class="boton"><i class="fas fa-times"></i></a>
+                <h3>Registrar</h3>
+                <form action="cat.jsp">
+                    <div class="contenedor-inputs">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="raza" placeholder="Raza">
+                        <input type="text" name="color" placeholder="Color">
+                        <input type="text" name="edad" placeholder="Edad">
+                        <input type="text" name="parasitos" placeholder="Toxoplasmosis (si / no)">
+
+                    </div>
+                    <input type="submit" class="btn-submit" value="Aceptar">
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="overlay" id="overlayC">
+            <div class="popup" id="popupC">
+                <a href="#" id="botonCC" class="boton"><i class="fas fa-times"></i></a>
+                <h3>Registrar</h3>
+                <form action="can.jsp">
+                    <div class="contenedor-inputs">
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="text" name="raza" placeholder="Raza">
+                        <input type="text" name="color" placeholder="Color">
+                        <input type="text" name="edad" placeholder="Edad">
+                        <input type="text" name="entrenamiento" placeholder="Nvl entrenamiento (1 - 10)"> 
+
+                    </div>
+                    <input type="submit" class="btn-submit" value="Aceptar"> 
+                </form>
+
+            </div>
+
+        </div>
+    
+    </div>    
+
+        <div class="info">
+            <h3>Consultar</h3>
+            <form action="verAnim.jsp">
+                <div class="contenedor-inputs">
+                    <input type="submit" class="btn-submit" value="Mascotas Disponibles">
+                </div>
+            </form>
+            <form action="formRetirar.html">
+                <div class="contenedor-inputs">                    
+                    <input type="submit" class="btn-submit" value="Retirar Mascota">                    
+                </div>
+            </form>
+            <form action="edadProm.jsp">
+                <div class="contenedor-inputs">
+                    <input type="submit" class="btn-submit" value="Edad promedio">                    
+                </div>
+            </form>
+            <form action="cantF.jsp">
+                <div class="contenedor-inputs">                   
+                    <input type="submit" class="btn-submit" value="Cantidad felinos">                   
+                </div>
+            </form>
+            <form action="cantC.jsp">
+                <div class="contenedor-inputs">                    
+                    <input type="submit" class="btn-submit" value="Cantidad caninos">
+                </div>
+            </form>
+        </div>
+
+        <img class="img-3" src="imag/huellitas.jpg" alt="">
+        <img class="img-0" src="imag/piesito.jpg" alt="">
+        
+        <script src="javasito.js"> </script>
+    </body>
+</html>
